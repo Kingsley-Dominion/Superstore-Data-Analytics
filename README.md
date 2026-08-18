@@ -13,7 +13,7 @@ Both dashboards are filterable — the Sales Dashboard by customer segment (Cons
 
 ## 1. Sales Dashboard
 
-![Sales Dashboard](image/superstore-sales-dashboard.png)
+![Sales Dashboard](Image/superstore-sales-dashboard.png)
 
 ### Headline metrics
 - **Sum of Sales:** 4M
@@ -45,7 +45,7 @@ These three cards anchor the report — average order value works out to roughly
 
 ## 2. Profit Dashboard
 
-![Profit Dashboard](image/superstore-profit-dashboard.png)
+![Profit Dashboard](Image/superstore-profit-dashboard.png)
 
 ### Headline metric
 - **Profit Target gauge:** 208.10K achieved against a 0K–416K range — just under the halfway mark.

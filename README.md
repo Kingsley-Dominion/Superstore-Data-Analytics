@@ -11,32 +11,32 @@ Both dashboards are filterable — the Sales Dashboard by customer segment (Cons
 
 ---
 
-## 1. Sales Dashboard
+## 1. Sales Dashboard -  Consumer Filtered
 
 ![Sales Dashboard](Image/superstore-sales-dashboard.png)
 
 ### Headline metrics
-- **Sum of Sales:** 4M
-- **Number of Orders:** 15K
-- **Sold Quantity:** 54K
+- **Sum of Sales:** 7M
+- **Number of Orders:** 27K
+- **Sold Quantity:** 92K
 
-These three cards anchor the report — average order value works out to roughly $267 (4M / 15K orders), a useful benchmark to track over time or compare across segments.
+These three cards anchor the report — average order value works out to roughly $259.3K (7M / 27K orders), a useful benchmark to track over time or compare across segments.
 
 ### Chart breakdown
 
-**Sales by Sub-Category** — a descending bar chart led by Phones (494K), Copiers (463K), Bookcases (457K), and Chairs (449K), tapering down to Fasteners (26K) and Labels (21K) at the bottom.
+**Sales by Sub-Category** — a descending bar chart led by Phones (905K), Chairs (778K), Bookcases (765K), and Copiers (757K), tapering down to Fasteners (42K) and Labels (39K) at the bottom.
 *Insight:* Revenue is concentrated in a handful of high-ticket sub-categories. The top four sub-categories alone account for a large share of total sales, which makes them the natural priority for inventory planning and promotional focus — while the long tail of low-volume items (Labels, Fasteners, Envelopes) contributes comparatively little and may not be worth heavy marketing spend.
 
 **Sales by Categories** (donut) — Technology 37%, Furniture 33%, Office Supplies 30%.
 *Insight:* The three categories are more evenly split than the sub-category chart suggests, meaning Technology's lead comes from a few standout sub-categories (Phones, Copiers) rather than category-wide dominance. This is a good example of why drilling from category into sub-category matters before making stocking decisions.
 
-**Sales by Ship Mode** — Standard Class (2.26M) dwarfs Second Class (0.81M), First Class (0.55M), and Same Day (0.20M).
+**Sales by Ship Mode** — Standard Class (3.9M) Second Class (1.3M), First Class (1.0M), and Same Day (0.30M).
 *Insight:* Customers overwhelmingly default to the slowest, cheapest shipping option. This has two implications worth investigating further: either customers aren't price-sensitive enough to upgrade, or faster shipping isn't being marketed effectively at checkout — both are testable hypotheses for a follow-up analysis.
 
-**Asian Region Yearly Sales** (2011–2014 line chart, split by Central / North / Southeast Asia) — all three sub-regions dip around 2012 (to roughly 41K–49K) before climbing steadily through 2014, with North Asia (95K) and Southeast Asia (80K) pulling ahead of Central Asia (65K) by the end of the period.
+**Asian Region Yearly Sales** (2011–2014 line chart, split by Central / North / Southeast Asia) — all three sub-regions dip around 2013 (to roughly 49K-70k) before climbing steadily through 2014, with North Asia (95K) and Southeast Asia (80K) pulling ahead of Central Asia (65K) by the end of the period.
 *Insight:* The shared 2012 dip across all three sub-regions points to a market-wide factor that year rather than a region-specific issue. The subsequent recovery is strongest in North Asia, which by 2014 is growing faster than its neighbors — worth flagging as the region to watch for continued investment.
 
-**Sales by Market** — APAC leads at 1.08M, followed by EU (0.92M), US (0.71M), LATAM (0.65M), EMEA (0.25M), Africa (0.20M), and Canada (0.02M).
+**Sales by Market** — APAC leads at 1.8M, followed by EU (1.5M), US (1.2M), LATAM (1.1M), EMEA (0.4M), Africa (0.40M), and Canada (0.02M).
 *Insight:* APAC and EU together account for close to half of total sales, while Canada is nearly negligible. This is the chart to check before any conversation about regional expansion or resource reallocation.
 
 **Segment cards** (Consumer / Corporate / Home Office) — act as slicers, letting any of the charts above be filtered down to a single customer segment for comparison.
@@ -47,27 +47,26 @@ These three cards anchor the report — average order value works out to roughly
 
 ![Profit Dashboard](Image/superstore-profit-dashboard.png)
 
-### Headline metric
-- **Profit Target gauge:** 208.10K achieved against a 0K–416K range — just under the halfway mark.
+### Headline metric - Standard Class Filtered
 
-*Insight:* On its own, "50% of target" is a neutral number — its usefulness comes from pairing it with the sub-category and market breakdowns below to see which parts of the business are pulling that number up or down.
+*Insight:* For Standard Class On its own, "50% of target" is a neutral number — its usefulness comes from pairing it with the sub-category and market breakdowns below to see which parts of the business are pulling that number up or down.
 
 ### Chart breakdown
 
 **Profit by Order Priority** (donut) — profit splits across High, Medium, and Critical priority orders in shares of roughly 25%, 32%, and 43%.
-*Insight:* Profit isn't evenly distributed across priority tiers — the largest single tier contributes closer to half of total profit. Since order priority is often tied to customer type or fulfillment urgency, this is worth cross-referencing with segment data to see whether high-value customers cluster in a particular priority tier.
+*Insight:* Profit isn't evenly distributed across priority tiers — the largest single tier contributes more than half of total profit. Since order priority is often tied to customer type or fulfillment urgency, this is worth cross-referencing with segment data to see whether high-value customers cluster in a particular priority tier.
 
-**Profit by Market** — APAC again leads (59K), followed by US (49K), EU (47K), LATAM (41K), Africa (9K), Canada (3K), and EMEA at 0K.
-*Insight:* This is the chart that reframes the sales story. EU sold nearly as much as APAC (0.92M vs 1.08M in sales) but generates noticeably less profit (47K vs 59K) — a sign of thinner margins in that market. EMEA is the starkest case: it contributes real sales volume (0.25M) but essentially zero profit, which flags it as a market worth a margin investigation rather than a sales-volume push.
+**Profit by Market** — APAC again leads (281K), followed by EU (230KK), US (164K), LATAM (132K), Africa (447K), EMEA (29K), and Canada at 8K.
+*Insight:* This is the chart that reframes the sales story. EU sold nearly as much as APAC (0.92M vs 1.08M in sales) but generates noticeably less profit (230K vs 281K) — a sign of thinner margins in that market. Canada is the starkest case: it contributes real sales volume (0.02M) but essentially zero profit, which flags it as a market worth a margin investigation rather than a sales-volume push.
 
-**Profit by Sub-Category** — led by Copiers (43.93K), Phones (29.19K), and Bookcases (28.48K), but **Tables comes in at -8.09K** — the only sub-category losing money.
+**Profit by Sub-Category** — led by Copiers (148.1K), Phones (139.K), and Bookcases (102.62K), but **Tables comes in at -36.08K** — the only sub-category losing money.
 *Insight:* This is the single most actionable chart in the dashboard. Tables sell well enough to show up in the sales breakdown but actively lose money once costs are accounted for — a strong signal to review pricing, discounting, or supplier costs specifically for that sub-category rather than treating it as a normal underperformer.
 
-**Asian Region Yearly Profits** (2011–2014) — North Asia peaks at 13.58K in 2013 before pulling back to 6.65K in 2014, while Central Asia turns negative in both 2013 (-2.89K) and 2014 (-0.5K), and Southeast Asia stays modest but positive throughout.
-*Insight:* This directly complicates the sales-side takeaway. North Asia was the sales growth leader, but its profit is volatile and actually contracted in 2014 even as revenue kept climbing — a classic sign that growth may be coming at the expense of margin (heavier discounting, higher fulfillment costs, or a shifting product mix). Central Asia's move into negative profit despite modest sales is worth a root-cause look.
+**Asian Region Yearly Profits** (2011–2014) — North Asia peaks at 34.09K in 2014 before, while Central Asia mantains slight growth trend in 2013 (24.09K) and 2014 (26.91K), and Southeast Asia stays modest but positive throughout.
+*Insight:* This directly complicates the sales-side takeaway. North Asia was the sales growth leader, but its profit is volatile and actually climaxed in 2014 even as revenue kept climbing — a classic sign that growth may be coming at the expense of margin (heavier discounting, higher fulfillment costs, or a shifting product mix). Central Asia's move into negative profit despite modest sales is worth a root-cause look.
 
-**Top 3 Region by Profit** (donut) — North Asia leads at 40%, with Central Asia and South Asia each contributing 30%.
-*Insight:* Reinforces North Asia's role as the top profit driver within the region, but the closeness of the other two shares shows profit is more evenly spread across Central and South Asia than the raw sales numbers alone would suggest.
+**Top 3 Region by Profit** (donut) — Central Asia leads at 47%, with North Asia and South Asia each contributing 29% and 24% respectively.
+*Insight:* Reinforces Central Asia's role as the top profit driver within the region, but the closeness of the other two shares shows profit is more evenly spread across North and South Asia than the raw sales numbers alone would suggest.
 
 **Ship Mode filter** (First Class / Same Day / Second Class / Standard Class) — lets every chart above be recalculated for a single shipping mode, useful for testing whether the Standard Class's dominant sales volume is helping or hurting overall profit.
 
